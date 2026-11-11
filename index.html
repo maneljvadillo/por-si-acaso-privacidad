@@ -1,49 +1,76 @@
-<!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de privacidad de Por Si Acaso</title>
-<style>body{font-family:-apple-system,system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1d1d1f}h1{font-size:1.7rem}h2{font-size:1.2rem;margin-top:1.8rem}</style>
-</head><body>
-<h1>Política de privacidad de Por Si Acaso</h1>
-<p><em>Fecha de la última revisión: 4 de noviembre de 2026. Responsable: Manel, desarrollador independiente de Por Si Acaso. Contacto: maneljvadillo@gmail.com.</em></p>
-<p>Por Si Acaso es una app para prepararte ante emergencias. Esta política explica qué datos maneja, dónde se quedan y qué puedes hacer con ellos.</p>
-<h2>Resumen</h2>
-<ul>
-<li>No hay cuentas, ni registro, ni servidores propios.</li>
-<li>No usamos publicidad, ni analítica, ni rastreo. La app no envía tus datos a nadie.</li>
-<li>Tus datos (perfil familiar, inventario, plan, contactos, fotos de productos) se guardan solo en tu iPhone.</li>
-<li>La única conexión a internet que hace la app es la descarga opcional del modelo de IA del chat, desde Hugging Face. Después, el chat funciona sin conexión.</li>
-</ul>
-<h2>Qué datos se guardan y dónde</h2>
-<p>Todo lo que escribes en la app se guarda en el almacenamiento local de tu iPhone:</p>
-<ul>
-<li><strong>Perfil familiar:</strong> nombres, edades y necesidades de cada persona (por ejemplo, embarazo o alergias), que usa la app para calcular el reparto de comida y agua.</li>
-<li><strong>Inventario y plan:</strong> alimentos, agua, medicinas, fechas de caducidad y otros objetos de casa.</li>
-<li><strong>Contactos de emergencia:</strong> nombres y teléfonos que tú introduces.</li>
-<li><strong>Fotos de productos:</strong> las que tú eliges en la galería o haces con la cámara. Se quedan en tu iPhone.</li>
-<li><strong>Ajustes:</strong> país para el número de emergencias, avisos activados y preferencias.</li>
-</ul>
-<p>Estos datos no se envían a ningún servidor. No hay copia en la nube que gestionemos nosotros. Si tu iPhone tiene copia de seguridad en iCloud, el sistema de Apple puede incluir la app y sus datos en esa copia, según tus ajustes de iCloud.</p>
-<h2>Permisos del iPhone</h2>
-<ul>
-<li><strong>Cámara y galería:</strong> solo para las fotos de productos que tú haces o eliges. La app no accede a la galería completa, solo a la foto que seleccionas.</li>
-<li><strong>Ubicación:</strong> solo si activas el interruptor de «incluir ubicación» al preparar un aviso a la familia. La ubicación se escribe dentro del mensaje que tú decides enviar. La app no la guarda ni la envía por su cuenta.</li>
-<li><strong>Notificaciones:</strong> para avisarte de caducidades. Son avisos locales generados en tu iPhone.</li>
-</ul>
-<h2>Avisar a tu familia</h2>
-<p>La app prepara un mensaje («Estoy bien», «Necesito ayuda» o «Voy al punto de encuentro») y lo abre en la app de Mensajes o en la hoja de compartir de tu iPhone. <strong>La envías tú</strong>, y el mensaje sale por la app que elijas (SMS, iMessage, WhatsApp…). Por eso, esos mensajes pasan por el operador o servicio que uses, con sus propias condiciones. La app no puede saber si el mensaje llegó.</p>
-<h2>El chat con IA</h2>
-<p>El modelo de IA se ejecuta en tu iPhone. Tus preguntas y las respuestas no salen del dispositivo. La descarga del modelo (unos 1,3 GB) se hace desde Hugging Face. Al descargarlo, Hugging Face recibe los datos normales de una conexión (como la dirección IP del dispositivo), según su propia política de privacidad. La app no envía ningún otro dato en esa descarga.</p>
-<h2>Copias de seguridad que tú creas</h2>
-<p>En Ajustes puedes exportar una copia de tus datos a un archivo que tú eliges (por ejemplo, en Archivos). Ese archivo no está cifrado por la app: guárdalo en un lugar seguro. Quien tenga el archivo puede ver tus datos.</p>
-<h2>Menores</h2>
-<p>Los datos de los niños de tu familia (nombre, edad y necesidades) los introduces tú y se quedan solo en tu iPhone. No recogemos datos de menores.</p>
-<h2>Cuánto tiempo se guardan</h2>
-<p>Hasta que los borras. Puedes borrar cada dato dentro de la app o usar <strong>Ajustes → Borrar todos mis datos</strong>. Si desinstalas la app, se borran también sus datos locales.</p>
-<h2>Tus derechos</h2>
-<p>Como los datos están en tu iPhone, tú los controlas. Puedes verlos, cambiarlos, exportarlos o borrarlos en cualquier momento. Si tienes dudas sobre esta política, escribe a maneljvadillo@gmail.com.</p>
-<h2>Cambios</h2>
-<p>Si cambiamos esta política, lo indicaremos aquí y en la descripción de la app. Si alguna vez añadimos algo que envíe datos, pediremos tu permiso antes.</p>
-<h2>Aviso</h2>
-<p>Por Si Acaso no sustituye a Protección Civil, al número de emergencias de tu país ni a un profesional sanitario. Si hay peligro inmediato, llama al número de emergencias.</p>
-</body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Emerge App · Política de privacidad y soporte</title>
+  <style>
+    body {
+      box-sizing: border-box;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: clamp(1rem, 4vw, 2rem);
+      font: 1rem/1.6 system-ui, sans-serif;
+      color: CanvasText;
+      background: Canvas;
+    }
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin-block-start: 0; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.125rem; }
+    a { overflow-wrap: anywhere; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+    li + li { margin-block-start: 0.5rem; }
+    article + article { border-block-start: 1px solid GrayText; margin-block-start: 3rem; padding-block-start: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Emerge App</h1>
+    <nav aria-label="Idioma">
+      <a href="#privacidad">Español</a>
+      <a href="#privacy" lang="en">English</a>
+    </nav>
+  </header>
+  <main>
+    <article aria-labelledby="privacidad">
+      <h2 id="privacidad">Política de privacidad de Emerge App</h2>
+      <p><strong>Versión 1.0 · <time datetime="2026-11-11">11 de noviembre de 2026</time></strong></p>
+      <p><strong>Responsable:</strong> Manel, desarrollador independiente de Emerge App. <strong>Contacto:</strong> <a href="mailto:maneljvadillo@gmail.com">maneljvadillo@gmail.com</a>.</p>
+      <p>Emerge App no requiere cuenta y no incorpora publicidad, analítica ni rastreo. No gestionamos ningún servidor para tus datos en esta versión.</p>
+
+      <h3>Datos que guardas en el iPhone</h3>
+      <p>El perfil familiar, el inventario, las caducidades, el plan, los puntos de encuentro, los contactos, las fotos de productos y los ajustes se guardan en el dispositivo. Puedes añadir información de salud de forma opcional a las fichas médicas locales. Estas fichas están cifradas y no se incluyen en la copia que exportas desde la app. La información de menores que anotes en tu perfil se guarda del mismo modo que el resto del perfil. Si usas las copias de seguridad de Apple, el sistema puede incluir datos de la app conforme a tus ajustes.</p>
+
+      <h3>Permisos y acciones que tú decides</h3>
+      <ul>
+        <li><strong>Cámara y fotos:</strong> puedes hacer o elegir una foto para el inventario. El código morse puede usar la linterna sin guardar imágenes.</li>
+        <li><strong>Contactos y ubicación:</strong> puedes elegir contactos desde el selector de iOS. Solo se añade ubicación a un aviso familiar si eliges adjuntarla y el iPhone obtiene una lectura apta. La app prepara el contenido y tú decides si lo envías con Mensajes o la app que elijas. El operador o el servicio elegido procesa el mensaje conforme a sus condiciones.</li>
+        <li><strong>Notificaciones:</strong> los avisos de caducidad son locales y se pueden desactivar.</li>
+        <li><strong>Compra:</strong> Apple procesa el pago y la restauración mediante la App Store. Emerge App consulta el estado de la compra para desbloquear la versión completa; no recibe los datos de tu tarjeta.</li>
+        <li><strong>Exportación:</strong> puedes guardar una copia de los datos del plan y el inventario donde decidas. El archivo exportado no está cifrado por la app; protégelo si contiene datos personales.</li>
+      </ul>
+      <p>Puedes corregir datos desde la app o usar la opción de borrado en Ajustes. El borrado local no elimina archivos que ya hayas exportado ni mensajes que hayas enviado. Para preguntas sobre esta política o tus datos, escribe al correo de contacto.</p>
+    </article>
+
+    <article lang="en" aria-labelledby="privacy">
+      <h2 id="privacy">Emerge App privacy policy</h2>
+      <p><strong>Version 1.0 · <time datetime="2026-11-11">November 11, 2026</time></strong></p>
+      <p><strong>Developer:</strong> Manel, independent developer of Emerge App. <strong>Contact:</strong> <a href="mailto:maneljvadillo@gmail.com">maneljvadillo@gmail.com</a>.</p>
+      <p>Emerge App does not require an account and does not include advertising, analytics or tracking. We do not operate a server for your data in this version.</p>
+      <p>Your household profile, inventory, expiration dates, plan, meeting places, contacts, item photos and settings are stored on your device. Optional medical profiles are encrypted and are excluded from the backup file you export in the app. Children's information in the household profile is stored in the same way as the rest of the profile. Apple device backups may include app data depending on your settings.</p>
+
+      <ul>
+        <li><strong>Camera and photos:</strong> take or select inventory photos. The Morse feature can use the flashlight without saving images.</li>
+        <li><strong>Contacts and location:</strong> choose contacts with the iOS contact picker. Location is attached to a family message only when you choose to include it and a suitable location is available. You decide whether to send the message. Your carrier or chosen messaging service processes it under its own terms.</li>
+        <li><strong>Notifications:</strong> expiration reminders are generated locally and can be disabled.</li>
+        <li><strong>Purchases:</strong> Apple handles payment and restoration. The app checks your entitlement to unlock the full version and does not receive your card details.</li>
+        <li><strong>Exports:</strong> save a backup of plan and inventory data to a destination of your choice. The app does not encrypt the exported file; protect it if it contains personal information.</li>
+      </ul>
+      <p>You can edit data in the app or erase it from Settings. Local erasure does not delete files you have exported or messages you have sent. Contact the developer with questions about your data or this policy.</p>
+    </article>
+  </main>
+</body>
+</html>
